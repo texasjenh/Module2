@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>My First Page - Jennifer Harrison</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale">
+    <meta name="description" content="This is my first website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Jennifer Harrison">
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="form.html">Form</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My HTML Practice Page</h1>
+
+        <article>
+            <h2>Learning Elements - div, span, pre, p, ul, ol, article</h2>
+
+            <div>HTML</div> <div>CSS</div> <div>JavaScript</div>
+
+            <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+
+            <pre>
+                Text in     a pre Elements
+                is displayed in a fixed-width
+                font, and it preserves      spaces and
+                line breaks
+            </pre>
+
+            <p>Represent paragraph     without preserving            spaces.</p>
+
+            <ul>
+                <li>Longhorns</li>
+                <li>Bulldogs</li>
+                <li>Wolverines</li>
+                <li>Red Raiders</li>
+            </ul>
+
+            <ol>
+                <li>Longhorns</li>
+                <li>Bulldogs</li>
+                <li>Wolverines</li>
+                <li>Aggies</li>
+            </ol>
+
+            <ol>
+                <li>Longhorns</li>
+                <li>Bulldogs</li>
+                <li>Wolverines
+                    <ul>
+                        <li>First bullet</li>
+                        <li>Second bullet</li>
+                    </ul>
+                </li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>HTML Elements - Table</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">First Header</th>
+                        <th>Second Header</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>First Cell - First Row</td>
+                        <td>Second Cell - First Row</td>
+                        <td>Third Cell - First Row</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">First Cell - Second Row</td>
+                        <td>Second Cell - Secone Row</td>
+                        <td>Third Cell - Second Row</td>
+                    </tr>
+
+                    <tr>
+                        <td>First Cell - Third Row</td>
+                        <td>Second Cell - Third Row</td>
+                    </tr>
+                </tbody>                
+            </table>
+        </article>
+
+        <article>
+            <h2>HTML Elements - img, video, audio</h2>
+
+            <img src="https:/picsum.photos/400/400" alt="Random Picture" width="300" height="300"/>
+
+            <img src="assets/html_lab_image.jpg" alt="html lab image" width="300" height="300"/>
+
+            <video witdth="250" autoplay>
+                <source src="assets/flower.webm" type="video/webm">
+                Sorry, your browser doesn't support embedded videos
+            </video>
+
+            <figure>
+                <figcaption>Listen to the T-Rex</figcaption>
+                <audio src="assets/t-rex-roar.mp3" autoplay>
+                    Your browser does not support the <code>audio</code>element.
+                </audio>
+            </figure>
+
+        </article>        
+    </main>
+
+    <footer>Copyright &copy; 2024 All Rights Reserved</footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- works like <a href="/index.html">Home</a> -->
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <form method="POST" action="http:127.0.0.1:5500/form"></form>
+      <div>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+      </div>
+
+      <div>
+        <p>Select your favorite coding language:</p>
+        <input type="radio" id="lang1" name="fav_language" value="HTML">
+        <label for="lang1">HTML</label><br>
+        <input type="radio" id="lang2" name="fav_language" value="CSS">
+        <label for="lang2">CSS</label><br>
+       <input type="radio" id="lang3" name="fav_language" value="JavaScript">
+       <label for="lang3"></label>JavaScript</label><br>
+      </div>
+
+      <div>
+        <p>What type of vehicle do you own?</p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Car">
+        <label for="vehicle1">Car</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="SUV">
+        <label for="vehicle2">SUV</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Truck">
+        <label for="vehicle3">Truck</label><br>
+      </div>
+  <br>
+
+      <div>
+        <label for="vmake">What is your vehicle's make?</label>
+        <select name="vmake" id="vmake">
+          <option value="acura">Acura</option>
+          <option value="chevrolet">Chevrolet</option>
+          <option value="ford">Ford</option>
+          <option value="dodge">Dodge</option>
+          <option value="gmc">GMC</option>
+          <option value="honda">Honda</option>
+          <option value="hyundai">Hyundai</option>
+          <option value="kia">Kia</option>
+          <option value="mazda">Mazda</option>
+          <option value="nissan">Nissan</option>
+          <option value="subaru">Subaru</option>
+          <option value="toyota">Toyota</option>
+          <option value="none">None of the above</option>
+        </select>  
+      </div>
+    <br>
+      <div>
+        <button type="submit">Submit form</button>
+      </div>
+    </form>   
+  </main>
+    <br>
+  <footer>Copyright &copy; 2024</footer>
+</body>
+
+</html>

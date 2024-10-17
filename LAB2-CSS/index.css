@@ -1,0 +1,278 @@
+/* I. Selectors */
+/* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+
+/* 1.1 - Use type selector to style all articles */
+article {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+/* 1.2 - Use class selector to set font color to red */
+.style-me1 {
+    color: red;
+}
+
+/* 1.3 - Use id selector to set font color to blue */
+#style-me2 {
+    color: blue;
+}
+
+/* 1.4 - Use a specific selector to set font color to purple */
+#style-me2.style-me1 {
+    color: purple;
+}
+
+/* Put styles for questions 2.1 and 2.2 here */
+
+/* 2.1 - Use a descendant combinator to set <p> background color to red */
+.my-descendants-are-styled p {
+    background-color: red;
+}
+
+/* 2.2 - Use a child combinator to set background color to light green */
+.my-children-are-styled > p {
+    background-color: lightgreen;
+}
+/* II. Box model and common properties */
+/* Put styles for questions 1-8 here */
+
+
+.box {
+    /* 1.1 - Use a class element to set background color */
+    background-color: #B8DBD9;
+
+    /* 1.2 - Use margin and padding syntaxes */
+    margin: 20px 18px 14px 10px;
+    margin: 20px 20px;
+    margin: 36px;
+
+    padding: 4px 2px 6px 8px;
+    padding: 22px 22px;
+    padding: 4px;
+
+    /* 2.1 - Set width and height using different dimensions */
+    width: 100px;
+    width: 25%;
+    width: 15em;
+    width: 24vw;
+
+    height: 100px;
+    height: 25%;
+    height: 10em;
+    height: 30vh;
+
+    /* 2.2 - Force CSS rules to take precendence using !important */
+    width: 32vw;
+    height: 34vh;
+
+    /* 2.3 - Resize window in browser to see how box changes */
+
+    /* 3.1 - Set a border using different styles */
+    border: 4px dashed purple;
+    border: 2em double blue;
+    border: 6px dotted lemonchiffon;
+
+    /* 3.2 - Set border to 10px solid - observe thickness of border movement */
+    border: 10px solid #586F7C;
+
+    /* 4.1 - Test the two different values of box-sizing. How are they effected? Width + Height */
+    box-sizing: border-box;
+    box-sizing: content-box;
+
+    /* 5.1 - Make text overflow outside of element by decreasing width and height */
+    width: 34vw;
+    height: 34vh;
+
+    /* 5.2 - Set overflow rule. How do they effect the box? */
+    overflow: hidden;
+    overflow: scroll;
+    overflow: visible;
+    overflow: auto;
+
+    /* 6.1 - Add an outline */
+    outline: 10px solid #4BA3C3;
+
+    /* 7.1 - Set border-radius using different values expressed in pixels or ems */
+    border-radius: 8em;
+    border-radius: 4em;
+    
+    /* 7.2 - Set border-radius to 50% + equal width & height to make a circle*/
+    border-radius: 50%;
+    width: 275px;
+    height: 275px;
+
+    /* 7.3 - Increase the padding so text inside box is not cut off by border corners */
+    padding: 6em;
+    
+    /* 8.1 - Set a background image for the box using background property. */
+    background-image: url("./assets/images/img1.png");
+
+    /* 8.2 - Set background-size to cover and try other values. */
+    background-size: cover;
+   
+    /* 8.3 - Set background-repeat to 'no repeat'.  */
+    background-repeat: no-repeat;
+
+    /* 8.4 - Set background-position to 'center' */
+    background-position: center;
+}
+
+/* III. Positioning */
+/* Put styles for questions 1-3 here */
+
+.position-absolute {
+    /* 1.1 - use CSS to apply absolute position on the .position-absolute class */
+    position: absolute;
+
+    /* 1.2 - Add a top position of 0 to fix this emailent to the top of the page. */
+    top: 0;
+    right: 24px;
+
+    /* 1.3 - Add a background color */
+    background-color: rgb(160, 175, 132, 50%);
+}   
+
+.position-relative {
+    /* 2.1 - Set relative position on the .position-relative class. */
+    position: relative;
+
+    /* 2.2 - Add a different background color to the relatively positioned container. */
+    background-color: #88292F;
+    color: white;
+
+    /* 2.3 - How is absolute positioning different from absolute that is outside of relative? Added above.  */
+
+    /* 2.4 - Add a left position value and add a right position value. What does this do? Moves container around page. Added above. */ 
+}
+
+.position-sticky {
+     /* 3.1 - .position-sticky class - set sticky position and scroll to see it work. */
+     position: sticky;
+
+     /* 3.2 - Add a different background color */
+     background-color: #D64550;
+     color: white;
+
+     /* 3.3 - Set a top position value to change where the element 'sticks'. */
+     top: 16px;
+}
+
+/* IV. Styling text */
+/* Put styles for questions 1-10 here */
+
+.text-style {
+    /* 1 - Set a font color using the CSS color rule on the .text-style class. */
+    color: rgb(48, 102, 190);
+
+    /* 2 - Add a font-size CSS rule and experiment with different sizes and units. */
+    font-size: 36px;
+    font-size: 12em;
+    font-size: 2%;
+    font-size: large;
+
+    /* 3 - Add a line-height CSS rule and experiment with different sizes and units, and omit the units. */
+    line-height: 4px;
+    line-height: 22em;
+    line-height: 75%;
+    line-height: normal;
+    line-height: 2.2;
+
+    /* 4 - Add a font-weight CSS rule and experiment setting w/ keywork & number values. */
+    font-weight: normal;
+    font-weight: 900;
+    font-weight: lighter;
+    font-weight: 400;
+
+    /* 5.4 - Copy the font-family CSS rule */
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    /* 1 - Add a text-align CSS rule and experiment with different values. */
+    text-align: right;
+    text-align: center;
+    text-align: justify;
+
+    /* 2 - Add a letter-spacing CSS rule and experiment with different values using px. */
+    letter-spacing: 4px;
+    letter-spacing: 10px;
+    letter-spacing: 8px;
+
+    /* 3 - Add a word-spacing CSS rule and experiment with different values.  */
+    word-spacing: 10px;
+    word-spacing: 5px;
+    word-spacing: 2px;
+
+    /* 4 - Add a text-transform CSS rule and experiment with different values. */
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+
+    /* 5 - Add text-decoration CSS rule and experiment with different values. */
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: underline;
+    text-decoration: underline overline;
+}
+
+/* V. Styling links */
+/* Put styles for questions 1-3 here */
+
+    /* 1.1 - Set a font color for all links in index.html in basic default state.*/
+a {
+    color: rgb(198, 212, 255);
+
+    /* 1.2 - Modify the font-size, font-weight, and text-dcoration for links. */
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: underline overline;
+    text-decoration-style: wavy;
+}
+    
+a:hover,
+a:active, 
+a:focus {
+    /* 2.1 - a:hover, active, focus - overide the color with a darker shade. */
+    color: #88292F;
+
+    /* 2.2 - Use a different text-decoration value. */
+    text-decoration-line: none;
+}
+
+a:visited {
+    /* 3.1 - Overside the color. */
+    color: rgb(45, 194, 189);
+
+    /* 3.2 - Use a different font-style value. */
+    font-style: oblique;
+}
+
+/* VI. calc() */
+/* Put styles for questions 1-3 here */
+
+/* 1 - Add a fixed width rule: width: 100vw - should not overflow outside of the screen. */
+.calc-style {
+    width: 100vw;
+
+    /* 1.1 - Add a background color to see its boundaries. */
+    background-color: #AFD2E9;
+
+    /* 1.2 - Add a new rule width: calc(100vw - 100px). */
+    width: calc(100vw - 100px);
+}
+
+/* 2 - Create a new selector for the .fixed-width-col class to set its width to 350px and display: inline-block. */
+.fixed-width-col {
+    width: 350px;
+    display: inline-block;
+}
+
+/* 3 - Create a second selector for the .fluid-col class and set display: inline-block too. */
+.fluid-col {
+    display: inline-block;
+
+    /* 3.1 - Use calc() to set a dynamically calculated width for the fluid-col so that the two elements appear side by side. */
+    width: calc(100% - 360px);
+}
