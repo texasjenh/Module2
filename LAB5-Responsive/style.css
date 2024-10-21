@@ -1,0 +1,125 @@
+/*!
+* Author: J. Harrison
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Body style */
+body {
+  font-family: "Lexend Exa", sans-serif;
+  margin: 0;
+  color: #192a51;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 50px;
+  text-align: center;
+  background: #3a405a;
+  color: #f2f2f2;
+}
+
+/* Increase font size of heading */
+.header h1 {
+  font-size: 48px;
+}
+
+/* Navigation bar style */
+.navbar {
+  overflow: hidden;
+  background-color: #96C5B0;
+  color: #f2f2f2;
+}
+
+/* Navigation bar links style */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Hover color change*/
+.navbar a:hover {
+  background-color: #f9dec9;
+  color: #949396;
+}
+
+/* Container for column*/
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+/* About Me (left) column */
+.aboutme {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Work & Experience (main) column */
+.work-edu {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Image CSS */
+.mepic {
+  border: 4px solid #3a405a;  
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+}
+
+.skills {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.section {
+  border-bottom: 2px solid #3a405a;
+}
+
+.jobtitle {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tasks {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+.footer {
+  padding: 8px;
+  text-align: right;
+  background: #96c5b0;
+}
+
+/* Responsive layout - when the screen is < 700px wide, stacks the columns */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is < 400px wide, stacks nav links */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
